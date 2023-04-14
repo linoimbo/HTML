@@ -1,0 +1,131 @@
+:root {
+  --primary: #a19f47;
+  --bg: #010101;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--bg);
+  color: #fff;
+  min-height: 2000px;
+}
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 6%;
+  background-color: rgba(1, 1, 1, 0.8);
+  border-bottom: 2px solid var(--primary);
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+.navbar .navbar-logo {
+  font-size: 2rem;
+  color: #fff;
+  font-style: italic;
+  font-weight: 900;
+}
+
+.navbar .navbar-logo span {
+  color: var(--primary);
+}
+
+.navbar .navbar-nav a {
+  color: #fff;
+  display: inline-block;
+  font-size: 1.4rem;
+  margin: 0 1rem;
+  font-weight: 900;
+}
+
+.navbar .navbar-nav a:hover {
+  color: var(--primary);
+}
+
+.navbar .navbar-nav a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.6rem;
+  border-bottom: 0.1rem solid var(--primary);
+  transform: scaleX(0);
+}
+
+.navbar .navbar-nav a:hover::after {
+  transform: scaleX(0.5);
+  transition: 0.1.5s linear;
+}
+.navbar .navbar-extra a {
+  color: #fff;
+  margin: 0;
+}
+.navbar .navbar-extra a:hover {
+  color: var(--primary);
+}
+
+/* Wim Section */
+
+.wim {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url(../img/header-bg.jpg);
+  background-size: cover;
+}
+.wim::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 30%;
+  bottom: 0;
+  background: linear-gradient(
+    0deg,
+    rgba(2, 2, 3, 2) 22%,
+    rgba(255, 247, 247, 0) 55%
+  );
+}
+.wim .content {
+  text-align: center;
+  padding: 2rem 19%;
+}
+.wim .content h1 {
+  padding: 2rem;
+  font-size: 5em;
+  color: #fff;
+  /* line-height: 1.2; */
+  align-items: center;
+}
+.wim .content h1 span {
+  color: var(--primary);
+}
+
+.wim .content p {
+  font-size: 2em;
+  margin-bottom: 1em;
+  line-height: 1.2;
+  font-weight: 500;
+  mix-blend-mode: difference;
+}
+
+.wim .content .cta {
+  margin-top: 0.5rem;
+  display: inline-block;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  color: #fff;
+  font-weight: 900;
+  background-color: var(--primary);
+  border-radius: 10em;
+  box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+}
