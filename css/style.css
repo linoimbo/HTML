@@ -138,7 +138,7 @@ body {
   object-fit: cover;
 }
 .contact .row form {
-  flex: 1 1 45rem;
+  flex: 2 1 6rem;
   padding: 5rem 2rem;
   text-align: center;
 }
