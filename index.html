@@ -148,22 +148,40 @@
           referrerpolicy="no-referrer-when-downgrade"
           class="map"
         ></iframe>
-        <form action="" method="post">
+        <form action="" method="post" autocomplete="off">
           <div class="input-group">
-            <i data-feather="user" for="nama">Masukan Nama</i>
-            <input type="text" placeholder="Nama" name="nama" id="nama" />
+            <label for="nama"></label>
+            <input
+              type="text"
+              placeholder="Nama"
+              name="nama"
+              id="nama"
+              autofocus
+              required
+              minlength="2"
+              maxlength="50"
+            />
           </div>
           <div class="input-group">
-            <i data-feather="mail" for="email"></i>
-            <input type="email" placeholder="email" name="email" id="email" />
+            <label for="email"></label>
+            <input
+              type="email"
+              placeholder="Email"
+              name="email"
+              id="email"
+              required
+            />
           </div>
           <div class="input-group">
-            <i data-feather="phone" for="telepon"></i>
+            <label for="tel"></label>
             <input
               type="tel"
               placeholder="Nomor Hp"
               name="telepon"
               id="telepon"
+              required
+              minlength="11"
+              maxlength="12"
             />
           </div>
           <button type="submit" class="btn">Kirim Pesan</button>
