@@ -167,13 +167,26 @@ body {
   padding: 5rem 2rem;
   text-align: center;
 }
+
+input:invalid,
+input:required:invalid {
+  border: none;
+  outline: 2px solid red;
+  border-radius: 2px;
+}
+input:valid,
+input:required {
+  border: 1px solid black;
+  outline: inherit;
+  border-radius: inherit;
+}
 .contact .row form .input-group {
   display: flex;
   align-items: center;
   margin-top: 1.5rem;
   background-color: var(--bg);
   border: 1px solid white;
-  padding-left: 2rem;
+  /* padding-left: 2rem; */
 }
 .contact .row form .input-group input {
   width: 100%;
@@ -436,7 +449,7 @@ body {
     border-radius: 10%;
     width: 100%;
     padding: 1rem;
-    margin-left: 10px;
+    margin-left: 1px;
     display: flex;
     flex-wrap: wrap;
   }
